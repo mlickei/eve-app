@@ -70,6 +70,5 @@ C:\ASP-NET-Projects\EveOnlineMissioningApp\EveOnlineMissioningApp\bin\Microsoft.
 C:\ASP-NET-Projects\EveOnlineMissioningApp\EveOnlineMissioningApp\bin\Microsoft.Owin.Security.Google.xml
 C:\ASP-NET-Projects\EveOnlineMissioningApp\EveOnlineMissioningApp\bin\Microsoft.Owin.Security.Twitter.xml
 C:\ASP-NET-Projects\EveOnlineMissioningApp\EveOnlineMissioningApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\ASP-NET-Projects\EveOnlineMissioningApp\EveOnlineMissioningApp\obj\Debug\EveOnlineMissioningApp.csprojResolveAssemblyReference.cache
 C:\ASP-NET-Projects\EveOnlineMissioningApp\EveOnlineMissioningApp\obj\Debug\EveOnlineMissioningApp.dll
 C:\ASP-NET-Projects\EveOnlineMissioningApp\EveOnlineMissioningApp\obj\Debug\EveOnlineMissioningApp.pdb

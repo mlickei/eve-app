@@ -6,7 +6,7 @@ using System.Web;
 namespace EveOnlineMissioningApp.Models
 {
 
-    public class Mission
+    public class MissionCapture
     {
 
         public int id { get; }
