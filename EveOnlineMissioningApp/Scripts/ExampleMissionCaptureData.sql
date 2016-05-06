@@ -1,0 +1,1 @@
+﻿INSERT INTO MissionCapture (title) VALUES ('This is a test');

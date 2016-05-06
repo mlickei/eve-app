@@ -1,7 +1,17 @@
-﻿@{
+﻿@model List<EveOnlineMissioningApp.Models.MissionCapture>
+
+@{
     ViewBag.Title = "Home Page";
 }
 
 <div class="main-content">
     <h2>This is the home page.</h2>
+    @Model.Count
+    @foreach (var capture in Model)
+    {
+        <div class="capture-title">@capture.title</div>
+        <div class="capture-start">@capture.startTime</div>
+        <div class="capture-end">@capture.endTime</div>
+    }
+    Done!
 </div>
