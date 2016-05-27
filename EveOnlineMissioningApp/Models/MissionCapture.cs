@@ -11,6 +11,7 @@ namespace EveOnlineMissioningApp.Models
 
     public class MissionCapture
     {
+
         [Key]
         public int id { get; set; }
 
@@ -32,11 +33,14 @@ namespace EveOnlineMissioningApp.Models
         {
             return startTime.Subtract(endTime);
         }
+
     }
 
     public class MissionCaptureContext : DbContext
     {
+
         public DbSet<MissionCapture> MissionCaptures { get; set; }
+
     }
 
 }
