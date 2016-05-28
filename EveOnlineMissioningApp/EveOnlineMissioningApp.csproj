@@ -192,6 +192,8 @@
     </Content>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-2.2.4.min.js" />
+    <Content Include="Scripts\mission-capture.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -210,7 +212,6 @@
   <ItemGroup>
     <Folder Include="Content\" />
     <Folder Include="fonts\" />
-    <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

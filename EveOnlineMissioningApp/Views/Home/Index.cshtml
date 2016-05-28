@@ -4,14 +4,35 @@
     ViewBag.Title = "Home Page";
 }
 
+<script src="~/Scripts/jquery-2.2.4.min.js" type="text/javascript"></script>
+<script src="~/Scripts/mission-capture.js" type="text/javascript"></script>
+
 <div class="main-content">
     <h2>This is the home page.</h2>
-    @Model.Count
-    @foreach (var capture in Model)
-    {
-        <div class="capture-title">@capture.title</div>
-        <div class="capture-start">@capture.startTime</div>
-        <div class="capture-end">@capture.endTime</div>
-    }
-    Done!
+    <div class="mission-capture-info">
+        <div class="title prop">
+            <span class="label">Title:</span>
+            <span class="value"></span>
+        </div>
+        <div class="start-time prop">
+            <span class="label">Start Time:</span>
+            <span class="value"></span>
+        </div>
+        <div class="end-time prop">
+            <span class="label">End Time:</span>
+            <span class="value"></span>
+        </div>
+    </div>
+    <div class="mission-capture-controls">
+        <div class="actions">
+            <!--GREEN-->
+            <div class="create-new btn btn-new">Create New Record</div>
+            <!--GREEN-->
+            <div class="start-timer btn btn-start">Start Timer</div>
+            <!--ORANGE/RED-->
+            <div class="stop-timer btn btn-stop">Stop Timer</div>
+            <!--BLUE-->
+            <div class="save-record btn btn-save">Save Record</div>
+        </div>
+    </div>
 </div>
