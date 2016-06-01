@@ -8,6 +8,7 @@ using EveOnlineMissioningApp.Models;
 
 namespace EveOnlineMissioningApp.Controllers
 {
+
     public class MissionCapturesController : ApiController
     {
         MissionCaptureContext _ctxMissionCapture = new MissionCaptureContext();
@@ -23,8 +24,9 @@ namespace EveOnlineMissioningApp.Controllers
 
             return mc;
         }
-
-        public int CreateMissionCapture(MissionCapture mc)
+        
+        [HttpPost]
+        public int CreateMissionCapture([FromBody] MissionCapture mc)
         {
             MissionCapture newMc = _ctxMissionCapture.MissionCaptures.Add(mc);
             _ctxMissionCapture.SaveChanges();
@@ -32,7 +34,8 @@ namespace EveOnlineMissioningApp.Controllers
             return newMc.id;
         }
 
-        public int UpdateMissionCapture(MissionCapture mc)
+        [HttpPut]
+        public int UpdateMissionCapture([FromBody] MissionCapture mc)
         {
             //Get the mission capture
             MissionCapture updatedMc = _ctxMissionCapture.MissionCaptures.Find(mc.id);
