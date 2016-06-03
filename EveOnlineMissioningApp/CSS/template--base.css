@@ -1,0 +1,22 @@
+﻿.btn {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-new,
+.btn-start {
+    background-color: #0d9b02;
+}
+
+.btn-save {
+    background-color: #0b9cfb;
+}
+
+.btn-stop {
+    background-color: #ee370d;
+}
