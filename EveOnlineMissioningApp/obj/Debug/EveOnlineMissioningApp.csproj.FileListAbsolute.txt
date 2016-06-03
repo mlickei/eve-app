@@ -73,3 +73,4 @@ C:\ASP-NET-Projects\EveOnlineMissioningApp\EveOnlineMissioningApp\bin\Microsoft.
 C:\ASP-NET-Projects\EveOnlineMissioningApp\EveOnlineMissioningApp\obj\Debug\EveOnlineMissioningApp.dll
 C:\ASP-NET-Projects\EveOnlineMissioningApp\EveOnlineMissioningApp\obj\Debug\EveOnlineMissioningApp.pdb
 C:\ASP-NET-Projects\EveOnlineMissioningApp\EveOnlineMissioningApp\bin\WebApiTestClient.dll
+C:\ASP-NET-Projects\EveOnlineMissioningApp\EveOnlineMissioningApp\obj\Debug\EveOnlineMissioningApp.csprojResolveAssemblyReference.cache
