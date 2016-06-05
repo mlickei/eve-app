@@ -18,6 +18,9 @@ namespace EveOnlineMissioningApp.Models
         public DateTime startTime { get; set; }
         public DateTime endTime { get; set; }
         public string title { get; set; }
+        public float income { get; set; }
+        public float expenses { get; set; }
+        public float profit { get; set; }
 
         public MissionCapture() { }
 
@@ -29,9 +32,17 @@ namespace EveOnlineMissioningApp.Models
         /**
          * Finds the difference between the start and end time as startTime - endTime.
          **/
-        public TimeSpan getDifference()
+        public TimeSpan getTimeDifference()
         {
             return startTime.Subtract(endTime);
+        }
+
+        /**
+         * Finds the difference between the income and expenses, which equals profit.
+         **/
+        public float calculateProfit()
+        {
+            return income - expenses;
         }
 
     }

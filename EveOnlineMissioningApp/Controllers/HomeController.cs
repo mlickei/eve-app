@@ -14,10 +14,7 @@ namespace EveOnlineMissioningApp.Controllers
 
         public ActionResult Index()
         {
-            MissionCapture mc = new MissionCapture("Thing");
-            List<MissionCapture> l = missionCaptures.MissionCaptures.ToList();
-            l.Add(mc);
-            return View(l);
+            return View();
         }
 
     }
