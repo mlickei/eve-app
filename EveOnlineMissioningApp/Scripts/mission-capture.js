@@ -19,7 +19,10 @@
         var id,
             startTime,
             endTime,
-            title;
+            title,
+            income,
+            expenses,
+            profit;
 
         if (values.id)
         {
@@ -41,6 +44,21 @@
             this.title = values.title;
         }
 
+        if (values.income)
+        {
+            this.income = values.income;
+        }
+
+        if (values.expenses)
+        {
+            this.expenses = values.expenses;
+        }
+
+        if (values.profit)
+        {
+            this.profit = values.profit;
+        }
+
         this.getId = function()
         {
             return this.id;
@@ -59,6 +77,21 @@
         this.getTitle = function()
         {
             return this.title;
+        }
+
+        this.getIncome = function()
+        {
+            return this.income;
+        }
+
+        this.getExpenses = function()
+        {
+            return this.expenses;
+        }
+
+        this.getProfit = function ()
+        {
+            return this.profit;
         }
     }
 
@@ -202,7 +235,7 @@
         }
 
         //Stops timer and resets info
-        this.endTimer = function() {
+        this.endTimer = function () {
             endTime = new Date();
             clearInterval(interval);
             $missionCaptureInfo.find('.end-time input').val(endTime);
@@ -229,7 +262,7 @@
     //Setup control listeners
     function initControlListeners()
     {
-        $missionCaptureControl.find('.btn-new').on('click', function () {
+        $missionCaptureControl.find('.btn-save').on('click', function () {
             var newMissionCapture = {};
 
             $missionCaptureInfo.find('input').each(function () {

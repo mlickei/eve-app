@@ -1,7 +1,7 @@
 ﻿@model List<EveOnlineMissioningApp.Models.MissionCapture>
 
 @{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Home";
 }
 
 <script src="~/Scripts/jquery-2.2.4.min.js" type="text/javascript"></script>
@@ -23,6 +23,21 @@
             <span class="label">End Time:</span>
             <input class="value" name="endTime" disabled type="datetime" />
         </div>
+        <div class="income prop">
+            <span class="label">Income: </span>
+            <input class="value" name="income" type="number" />
+            <span class="symbol symbol-money">isk</span>
+        </div>
+        <div class="expenses prop">
+            <span class="label">Expenses: </span>
+            <input class="value" name="expenses" type="number" />
+            <span class="symbol symbol-money">isk</span>
+        </div>
+        <div class="profit prop">
+            <span class="label">Profit: </span>
+            <input class="value" name="profit" disabled type="number" />
+            <span class="symbol symbol-money">isk</span>
+        </div>
     </div>
     <div class="timer-display">
         <span class="hour-display">00</span><span class="sep sep-colon">:</span>
@@ -31,8 +46,6 @@
     </div>
     <div class="mission-capture-controls">
         <div class="actions">
-            <!--GREEN-->
-            <div class="create-new btn btn-new">Create New Record</div>
             <!--GREEN-->
             <div class="start-timer btn btn-start">Start Timer</div>
             <!--ORANGE/RED-->
