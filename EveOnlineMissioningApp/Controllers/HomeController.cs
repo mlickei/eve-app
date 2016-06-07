@@ -10,13 +10,12 @@ namespace EveOnlineMissioningApp.Controllers
 {
     public class HomeController : Controller
     {
-        private MissionCaptureContext missionCaptures = new MissionCaptureContext();
 
         public ActionResult Index()
         {
             return View();
         }
-
+        
     }
 
 }

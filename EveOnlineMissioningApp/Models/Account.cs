@@ -1,7 +1,7 @@
-﻿using System;
+﻿using EveOnlineMissioningApp.Models;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using System.ComponentModel.DataAnnotations;
+using System.Data.Entity;
 
 namespace EveOnlineMissioningApp.Models
 {
@@ -9,7 +9,10 @@ namespace EveOnlineMissioningApp.Models
     public class Account
     {
 
-        public int id { get; }
+        [Key]
+        public int id { get; set; }
+        public PasswordCredential credential { get; set; }
+        public IEnumerable<MissionCapture> missionCaptures { get; set; }
 
     }
 

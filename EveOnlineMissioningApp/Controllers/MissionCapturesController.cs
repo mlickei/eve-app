@@ -11,16 +11,16 @@ namespace EveOnlineMissioningApp.Controllers
 
     public class MissionCapturesController : ApiController
     {
-        MissionCaptureContext _ctxMissionCapture = new MissionCaptureContext();
+        AppDBContext _DBctx = new AppDBContext();
 
         public IEnumerable<MissionCapture> GetAllMissionCaptures()
         {
-            return _ctxMissionCapture.MissionCaptures.AsEnumerable();
+            return _DBctx.MissionCaptures.AsEnumerable();
         }
 
         public MissionCapture GetMissionCapture(int id)
         {
-            MissionCapture mc = _ctxMissionCapture.MissionCaptures.Find(id);
+            MissionCapture mc = _DBctx.MissionCaptures.Find(id);
 
             return mc;
         }
@@ -28,8 +28,8 @@ namespace EveOnlineMissioningApp.Controllers
         [HttpPost]
         public int CreateMissionCapture([FromBody] MissionCapture mc)
         {
-            MissionCapture newMc = _ctxMissionCapture.MissionCaptures.Add(mc);
-            _ctxMissionCapture.SaveChanges();
+            MissionCapture newMc = _DBctx.MissionCaptures.Add(mc);
+            _DBctx.SaveChanges();
 
             return newMc.id;
         }
@@ -38,11 +38,11 @@ namespace EveOnlineMissioningApp.Controllers
         public int UpdateMissionCapture([FromBody] MissionCapture mc)
         {
             //Get the mission capture
-            MissionCapture updatedMc = _ctxMissionCapture.MissionCaptures.Find(mc.id);
+            MissionCapture updatedMc = _DBctx.MissionCaptures.Find(mc.id);
 
             //Update it's values to the new version and save
-            _ctxMissionCapture.Entry(updatedMc).CurrentValues.SetValues(mc);
-            _ctxMissionCapture.SaveChanges();
+            _DBctx.Entry(updatedMc).CurrentValues.SetValues(mc);
+            _DBctx.SaveChanges();
 
             return updatedMc.id;
         }

@@ -47,11 +47,4 @@ namespace EveOnlineMissioningApp.Models
 
     }
 
-    public class MissionCaptureContext : DbContext
-    {
-
-        public DbSet<MissionCapture> MissionCaptures { get; set; }
-
-    }
-
 }

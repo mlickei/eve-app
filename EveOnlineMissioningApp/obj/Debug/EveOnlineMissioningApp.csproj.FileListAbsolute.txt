@@ -73,5 +73,6 @@ C:\ASP-NET-Projects\EveOnlineMissioningApp\EveOnlineMissioningApp\bin\Microsoft.
 C:\ASP-NET-Projects\EveOnlineMissioningApp\EveOnlineMissioningApp\obj\Debug\EveOnlineMissioningApp.dll
 C:\ASP-NET-Projects\EveOnlineMissioningApp\EveOnlineMissioningApp\obj\Debug\EveOnlineMissioningApp.pdb
 C:\ASP-NET-Projects\EveOnlineMissioningApp\EveOnlineMissioningApp\bin\WebApiTestClient.dll
-C:\ASP-NET-Projects\EveOnlineMissioningApp\EveOnlineMissioningApp\obj\Debug\EveOnlineMissioningApp.Migrations.initial.resources
+C:\ASP-NET-Projects\EveOnlineMissioningApp\EveOnlineMissioningApp\obj\Debug\EveOnlineMissioningApp.Migrations.Initial.resources
 C:\ASP-NET-Projects\EveOnlineMissioningApp\EveOnlineMissioningApp\obj\Debug\EveOnlineMissioningApp.csproj.GenerateResource.Cache
+C:\ASP-NET-Projects\EveOnlineMissioningApp\EveOnlineMissioningApp\obj\Debug\EveOnlineMissioningApp.csprojResolveAssemblyReference.cache
